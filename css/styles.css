@@ -68,15 +68,6 @@
   }
 }
 
-.command-card {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.command-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.2);
-}
-
 .arrow-icon {
   transition: transform 0.3s ease;
 }
@@ -114,15 +105,15 @@
   border-color: rgba(220, 38, 38, 0.4);
 }
 
-.command-category-header {
+.faq-question {
   cursor: pointer;
 }
 
-.command-category-header:hover {
-  border-color: rgba(220, 38, 38, 0.3);
+.faq-question:hover {
+  border-color: rgba(249, 115, 22, 0.5);
 }
 
-.command-list {
+.faq-answer {
   animation: slideDown 0.3s ease-out;
 }
 

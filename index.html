@@ -83,9 +83,9 @@
                 >Features</a
               >
               <a
-                href="#commands"
+                href="#faq"
                 class="text-white/70 hover:text-white transition-colors"
-                >Commands</a
+                >FAQ</a
               >
               <a
                 href="#testimonials"
@@ -135,9 +135,9 @@
                 >Features</a
               >
               <a
-                href="#commands"
+                href="#faq"
                 class="block px-3 py-2 text-white/70 hover:text-white transition-colors"
-                >Commands</a
+                >FAQ</a
               >
               <a
                 href="#testimonials"
@@ -172,7 +172,7 @@
               >
             </h1>
             <p class="text-lg md:text-xl text-white/70">
-              Protect your community from raids, bots, and malicious users with Styrocord's powerful verification and security features.
+              Secure your community from bots, spammers, and malicious users with Styrocord's powerful security features.
             </p>
             <div
               class="flex flex-col gap-4 sm:flex-row sm:gap-8 justify-center lg:justify-start"
@@ -184,10 +184,10 @@
                 Add to Discord
               </a>
               <a
-                href="#commands"
+                href="#faq"
                 class="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 px-8 py-4 rounded-xl font-semibold transition-colors duration-300"
               >
-                View Commands
+                Learn More
               </a>
             </div>
           </div>
@@ -252,136 +252,129 @@
       </div>
     </section>
 
-    <section id="commands" class="py-32 relative">
+    <section id="faq" class="py-32 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20">
-          <h2 class="text-5xl font-bold mb-4">Commands</h2>
+          <h2 class="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-600">FREQUENTLY ASKED QUESTIONS</h2>
+          <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto mb-6"></div>
           <p class="text-xl text-white/70">
-            Explore Styrocord's command library
+            Everything you need to know about our service
           </p>
         </div>
-        <div class="space-y-4 max-w-4xl mx-auto" id="commands-container">
+        
+        <div class="space-y-4 max-w-4xl mx-auto">
           
-          <div class="command-category">
-            <button onclick="toggleCategory('verification')" class="command-category-header w-full bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-6 flex items-center justify-between transition-all">
+          <div class="faq-item">
+            <button onclick="toggleFAQ('faq1')" class="faq-question w-full bg-gradient-to-r from-orange-500/10 to-orange-600/10 hover:from-orange-500/20 hover:to-orange-600/20 border border-orange-500/30 rounded-xl p-6 flex items-center justify-between transition-all">
               <div class="flex items-center gap-4">
-                <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center text-xl">
-                  🛡️
+                <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
                 </div>
-                <div class="text-left">
-                  <h3 class="text-xl font-bold text-white">Verification Commands</h3>
-                  <p class="text-sm text-white/60">Manage verification settings and processes</p>
-                </div>
+                <span class="text-left text-lg font-semibold text-white">Is Styrocord safe to use?</span>
               </div>
-              <svg class="w-6 h-6 text-white/70 arrow-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-6 h-6 text-orange-500 arrow-icon transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
-            <div id="verification" class="command-list hidden mt-2 ml-4 space-y-2">
-              <div class="bg-white/5 border border-white/10 rounded-lg p-4">
-                <div class="font-mono text-red-400">/setup</div>
-                <p class="text-sm text-white/70 mt-1">Configure verification for your server</p>
-              </div>
-              <div class="bg-white/5 border border-white/10 rounded-lg p-4">
-                <div class="font-mono text-red-400">/verify</div>
-                <p class="text-sm text-white/70 mt-1">Manually verify a user</p>
-              </div>
-              <div class="bg-white/5 border border-white/10 rounded-lg p-4">
-                <div class="font-mono text-red-400">/unverify</div>
-                <p class="text-sm text-white/70 mt-1">Remove verification from a user</p>
+            <div id="faq1" class="faq-answer hidden mt-2 ml-4 pl-14">
+              <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+                <p class="text-white/70 leading-relaxed">
+                  Yes, Styrocord is completely safe to use. We follow Discord's Terms of Service and API guidelines strictly. Our bot uses secure authentication methods and does not store any sensitive user data. Thousands of servers trust Styrocord to protect their communities.
+                </p>
               </div>
             </div>
           </div>
 
-          <div class="command-category">
-            <button onclick="toggleCategory('security')" class="command-category-header w-full bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-6 flex items-center justify-between transition-all">
+          <div class="faq-item">
+            <button onclick="toggleFAQ('faq2')" class="faq-question w-full bg-gradient-to-r from-orange-500/10 to-orange-600/10 hover:from-orange-500/20 hover:to-orange-600/20 border border-orange-500/30 rounded-xl p-6 flex items-center justify-between transition-all">
               <div class="flex items-center gap-4">
-                <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center text-xl">
-                  🔒
+                <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
                 </div>
-                <div class="text-left">
-                  <h3 class="text-xl font-bold text-white">Security Commands</h3>
-                  <p class="text-sm text-white/60">Advanced security and anti-raid tools</p>
-                </div>
+                <span class="text-left text-lg font-semibold text-white">How do I set up Styrocord on my server?</span>
               </div>
-              <svg class="w-6 h-6 text-white/70 arrow-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-6 h-6 text-orange-500 arrow-icon transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
-            <div id="security" class="command-list hidden mt-2 ml-4 space-y-2">
-              <div class="bg-white/5 border border-white/10 rounded-lg p-4">
-                <div class="font-mono text-red-400">/lockdown</div>
-                <p class="text-sm text-white/70 mt-1">Lock server during a raid or attack</p>
-              </div>
-              <div class="bg-white/5 border border-white/10 rounded-lg p-4">
-                <div class="font-mono text-red-400">/whitelist</div>
-                <p class="text-sm text-white/70 mt-1">Manage whitelisted users and roles</p>
-              </div>
-              <div class="bg-white/5 border border-white/10 rounded-lg p-4">
-                <div class="font-mono text-red-400">/antiraid</div>
-                <p class="text-sm text-white/70 mt-1">Configure anti-raid protection settings</p>
+            <div id="faq2" class="faq-answer hidden mt-2 ml-4 pl-14">
+              <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+                <p class="text-white/70 leading-relaxed">
+                  Setting up Styrocord is quick and easy! Simply invite the bot to your server using the "Add to Discord" button, grant the necessary permissions, and run the <span class="text-orange-500 font-mono">/setup</span> command. The bot will guide you through a simple configuration process to customize verification to your needs. Full setup takes less than 5 minutes.
+                </p>
               </div>
             </div>
           </div>
 
-          <div class="command-category">
-            <button onclick="toggleCategory('moderation')" class="command-category-header w-full bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-6 flex items-center justify-between transition-all">
+          <div class="faq-item">
+            <button onclick="toggleFAQ('faq3')" class="faq-question w-full bg-gradient-to-r from-orange-500/10 to-orange-600/10 hover:from-orange-500/20 hover:to-orange-600/20 border border-orange-500/30 rounded-xl p-6 flex items-center justify-between transition-all">
               <div class="flex items-center gap-4">
-                <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center text-xl">
-                  🔨
+                <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
                 </div>
-                <div class="text-left">
-                  <h3 class="text-xl font-bold text-white">Moderation Commands</h3>
-                  <p class="text-sm text-white/60">User management and moderation tools</p>
-                </div>
+                <span class="text-left text-lg font-semibold text-white">What payment methods do you accept?</span>
               </div>
-              <svg class="w-6 h-6 text-white/70 arrow-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-6 h-6 text-orange-500 arrow-icon transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
-            <div id="moderation" class="command-list hidden mt-2 ml-4 space-y-2">
-              <div class="bg-white/5 border border-white/10 rounded-lg p-4">
-                <div class="font-mono text-red-400">/ban</div>
-                <p class="text-sm text-white/70 mt-1">Ban a user from the server</p>
-              </div>
-              <div class="bg-white/5 border border-white/10 rounded-lg p-4">
-                <div class="font-mono text-red-400">/kick</div>
-                <p class="text-sm text-white/70 mt-1">Kick a user from the server</p>
-              </div>
-              <div class="bg-white/5 border border-white/10 rounded-lg p-4">
-                <div class="font-mono text-red-400">/warn</div>
-                <p class="text-sm text-white/70 mt-1">Issue a warning to a user</p>
+            <div id="faq3" class="faq-answer hidden mt-2 ml-4 pl-14">
+              <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+                <p class="text-white/70 leading-relaxed">
+                  Styrocord is completely free to use with all core features included! For premium features, we accept PayPal, credit/debit cards (Visa, Mastercard, American Express), and cryptocurrency payments. All transactions are processed securely through industry-standard payment processors.
+                </p>
               </div>
             </div>
           </div>
 
-          <div class="command-category">
-            <button onclick="toggleCategory('settings')" class="command-category-header w-full bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-6 flex items-center justify-between transition-all">
+          <div class="faq-item">
+            <button onclick="toggleFAQ('faq4')" class="faq-question w-full bg-gradient-to-r from-orange-500/10 to-orange-600/10 hover:from-orange-500/20 hover:to-orange-600/20 border border-orange-500/30 rounded-xl p-6 flex items-center justify-between transition-all">
               <div class="flex items-center gap-4">
-                <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center text-xl">
-                  ⚙️
+                <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
                 </div>
-                <div class="text-left">
-                  <h3 class="text-xl font-bold text-white">Configuration Commands</h3>
-                  <p class="text-sm text-white/60">Customize bot settings and preferences</p>
-                </div>
+                <span class="text-left text-lg font-semibold text-white">What if I need help or have issues?</span>
               </div>
-              <svg class="w-6 h-6 text-white/70 arrow-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-6 h-6 text-orange-500 arrow-icon transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
-            <div id="settings" class="command-list hidden mt-2 ml-4 space-y-2">
-              <div class="bg-white/5 border border-white/10 rounded-lg p-4">
-                <div class="font-mono text-red-400">/config</div>
-                <p class="text-sm text-white/70 mt-1">View and edit bot configuration</p>
+            <div id="faq4" class="faq-answer hidden mt-2 ml-4 pl-14">
+              <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+                <p class="text-white/70 leading-relaxed">
+                  Our support team is here to help! Join our official support server where our staff and community can assist you. We also have comprehensive documentation available on our website. For premium users, we offer priority support with faster response times. Most issues are resolved within 24 hours.
+                </p>
               </div>
-              <div class="bg-white/5 border border-white/10 rounded-lg p-4">
-                <div class="font-mono text-red-400">/logs</div>
-                <p class="text-sm text-white/70 mt-1">Configure logging channels</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button onclick="toggleFAQ('faq5')" class="faq-question w-full bg-gradient-to-r from-orange-500/10 to-orange-600/10 hover:from-orange-500/20 hover:to-orange-600/20 border border-orange-500/30 rounded-xl p-6 flex items-center justify-between transition-all">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <span class="text-left text-lg font-semibold text-white">Do you offer refunds?</span>
               </div>
-              <div class="bg-white/5 border border-white/10 rounded-lg p-4">
-                <div class="font-mono text-red-400">/roles</div>
-                <p class="text-sm text-white/70 mt-1">Set up verified and unverified roles</p>
+              <svg class="w-6 h-6 text-orange-500 arrow-icon transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="faq5" class="faq-answer hidden mt-2 ml-4 pl-14">
+              <div class="bg-white/5 border border-white/10 rounded-lg p-6">
+                <p class="text-white/70 leading-relaxed">
+                  Yes, we offer a 7-day money-back guarantee for premium subscriptions. If you're not satisfied with our premium features within the first 7 days of purchase, contact our support team for a full refund. After 7 days, refunds are handled on a case-by-case basis depending on the circumstances.
+                </p>
               </div>
             </div>
           </div>
@@ -543,8 +536,8 @@
                 >
               </li>
               <li>
-                <a href="#commands" class="text-white/70 hover:text-white"
-                  >Commands</a
+                <a href="#faq" class="text-white/70 hover:text-white"
+                  >FAQ</a
                 >
               </li>
               <li>
@@ -578,11 +571,21 @@
     </footer>
 
     <script>
-      function toggleCategory(categoryId) {
-        const content = document.getElementById(categoryId);
+      function toggleFAQ(faqId) {
+        const content = document.getElementById(faqId);
         const button = content.previousElementSibling;
         const arrow = button.querySelector('.arrow-icon');
         
+        // Close all other FAQs
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+          if (answer.id !== faqId) {
+            answer.classList.add('hidden');
+            const otherArrow = answer.previousElementSibling.querySelector('.arrow-icon');
+            otherArrow.classList.remove('rotate-180');
+          }
+        });
+        
+        // Toggle current FAQ
         content.classList.toggle('hidden');
         arrow.classList.toggle('rotate-180');
       }
