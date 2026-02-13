@@ -81,7 +81,7 @@
   transition: transform 0.3s ease;
 }
 
-.arrow-icon.active {
+.arrow-icon.rotate-180 {
   transform: rotate(180deg);
 }
 
@@ -99,9 +99,42 @@
 }
 
 .feature-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(220, 38, 38, 0.15);
   border-color: rgba(220, 38, 38, 0.3);
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(220, 38, 38, 0.2);
+  border-color: rgba(220, 38, 38, 0.4);
+}
+
+.command-category-header {
+  cursor: pointer;
+}
+
+.command-category-header:hover {
+  border-color: rgba(220, 38, 38, 0.3);
+}
+
+.command-list {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .pulse-on-hover {
@@ -162,10 +195,6 @@
   }
 }
 
-.gradient-bg {
-  background: linear-gradient(45deg, #dc2626, #991b1b);
-}
-
 @media (min-width: 640px) {
   .sm\:flex-row {
     flex-direction: row;
@@ -215,4 +244,23 @@
 #mobileMenu {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b91c1c;
 }
